@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 public class NormalAnimalTest {
     @Rule
     public DatabaseRule database = new DatabaseRule();
+
     NormalAnimal testNormalAnimal = new NormalAnimal("cat");
 
     @Test
