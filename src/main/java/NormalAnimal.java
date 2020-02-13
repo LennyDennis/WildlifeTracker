@@ -4,6 +4,7 @@ import java.util.List;
 
 public class NormalAnimal extends Animal {
     public static final String DATABASE_TYPE = "Not Endangered";
+
     public NormalAnimal(String name) {
         this.name = name;
         type = DATABASE_TYPE;
