@@ -43,13 +43,13 @@ public abstract class Animal {
                     .getKey();
         }
     }
-    public List<Sightings> getSightings() {
-        try (Connection con = DB.sql2o.open()) {
-            String sql = "SELECT * FROM sightings WHERE animalid = :id";
-            return con.createQuery(sql)
-                    .addParameter("id", this.id)
-                    .executeAndFetch(Sightings.class);
-        }
-
-    }
+//    public List<Sightings> getSightings() {
+//        try (Connection con = DB.sql2o.open()) {
+//            String sql = "SELECT * FROM sightings WHERE animalid = :id";
+//            return con.createQuery(sql)
+//                    .addParameter("id", this.id)
+//                    .executeAndFetch(Sightings.class);
+//        }
+//
+//    }
 }
