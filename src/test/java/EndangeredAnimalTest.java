@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 public class EndangeredAnimalTest {
     @Rule
     public DatabaseRule database = new DatabaseRule();
+
     EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("cat","okay","young");
 
     @Test
