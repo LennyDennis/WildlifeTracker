@@ -18,7 +18,6 @@ public class Sightings {
     public int getAnimalId(){
         return animalId;
     }
-
     public String getSightLocation(){
         return sightLocation;
     }
