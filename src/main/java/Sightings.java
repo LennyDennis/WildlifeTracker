@@ -14,6 +14,7 @@ public class Sightings {
         this.sightLocation = sightLocation;
         this.rangerName = rangerName;
     }
+
     public int getAnimalId(){
         return animalId;
     }
