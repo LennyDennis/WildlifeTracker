@@ -13,6 +13,7 @@ public class EndangeredAnimal  extends Animal{
         this.ageLevel = ageLevel;
         type = DATABASE_TYPE;
     }
+
     public String getHealthLevel(){
         return healthLevel;
     }
