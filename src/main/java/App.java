@@ -8,7 +8,9 @@ import static spark.Spark.*;
 
 public class App {
     public static void main(String[] args) {
+
         staticFileLocation("/public");
+
         Map<String,Object> model = new HashMap<String,Object>();
 
         get("/", (req,res) -> {
