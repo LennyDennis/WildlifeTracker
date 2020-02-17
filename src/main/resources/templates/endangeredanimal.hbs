@@ -20,16 +20,16 @@
                             <td>{{ id }}</td>
                             <td>{{ name }}</td>
                             <td>{{ type }}</td>
-                            <td>{{ ageLevel}}</td>
-                            <td>{{ healthLevel }}</td>
+                            <td>{{ age}}</td>
+                            <td>{{ health }}</td>
                         </tr>
                         </tbody>
                     {{/each}}
                 </table>
             </div>
     {{else}}
-            <p>No endagered animal! Please add one if it exists</p>
-            <a href="/endagered/new" class="otherbuttons">Add animal</a>
+            <p>No endangered animal! Please add one if it exists</p>
+            <a href="/endangered/form" class="otherbuttons">Add animal</a>
         </div>
     {{/if}}
 {{/partial}}

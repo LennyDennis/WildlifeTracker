@@ -3,7 +3,7 @@
         <div class="form-left">
             <h2>Sightings</h2>
             <div class="icon">
-                <img  src="#" alt="image">
+                <img  src="/images/form.jpg" alt="image">
             </div>
         </div>
         <div class="form-right">
@@ -11,14 +11,13 @@
             <form action="/sightings/new" method="post" name="sightingForm" class="form">
                 <input class="form-control input" type="text" placeholder="Enter the ranger name..." name="rangerName" autocomplete="off">
                 <select class="form-control input" name="animal" >
-                    {{#if animals}}
-                        <option label="" hidden disabled selected value>Select animal...</option>
-                        {{#each animals }}
-                            <option value="{{id}}">{{name}}</option>
-                        {{/each}}
-                    {{else}}
-                        <option label="" hidden disabled selected value>No animals recorded..</option>
-                    {{/if}}
+                    <option label="" hidden disabled selected value>Select animal...</option>
+                    {{#each   animals}}
+                        <option value="{{id}}">{{name}}</option><br><br>
+                    {{/each}}
+                    {{#each endangeredAnimals}}
+                        <option value="{{id}}">{{name}}</option><br><br>
+                    {{/each}}
                 </select>
                 <select class="form-control input" name="sightLocation">
                     <option label="" hidden disabled selected value>Enter location </option>
