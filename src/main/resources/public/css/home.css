@@ -107,8 +107,12 @@ ul li ul:hover {
   opacity: 1;
   display: block;
   transition: all 0.5s ease;
-  background-color:#15151e;
+  background-color:#15151e ;
   border:none;
+}
+.dplinks:hover{
+background-color:#15151e ;
+color:black;
 }
 .card{
     height: 350px;

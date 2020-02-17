@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+*{
+    color:white;
+}
 .members h2{
 	font-size:30px;
 	color: white;
