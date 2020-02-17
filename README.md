@@ -9,11 +9,15 @@ These instructions will get you a copy of the project up and running on your loc
 Clone the repository or download it.
 
 In PSQL:
+
 `CREATE DATABASE wildlife_tracker;`
+
 `CREATE TABLE animals(id SERIAL PRIMARY KEY,health varchar, age varchar, type varchar,name varchar);`
+
 `CREATE TABLE sightings(id SERIAL PRIMARY KEY, ranger varchar , location varchar, animalid int);`
 
 For tests:
+
 `CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;`
 
 # Built With
@@ -25,8 +29,6 @@ Spark
 Sql
 Handlebars
 Postgress DB
-
-# Codebeat Badge
 
 
 # Behaviour Driven Development
