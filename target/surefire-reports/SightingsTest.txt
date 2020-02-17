@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: SightingsTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.011 sec <<< FAILURE! - in SightingsTest
+find_returnSpecificSighting_testSighting1(SightingsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+sighting_instanceOfSightings_true(SightingsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+save_recordsWhenTheSightingWasViewed(SightingsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+getAnimalId_getTheAnimalId_int(SightingsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+getLocation_getSightingLocation_location(SightingsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+getRanger_getTheRangerName_ranger(SightingsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+save_saveSAnimalIDIntoDb_true(SightingsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+all_returnsAllInstancesOfSightings_true(SightingsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+equal_checkWhetherSightingsContentAreTheSame_true(SightingsTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+save_returnsTrueIfTheSavedAreEqual(SightingsTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+save_assignsIdToSpecificInstance(SightingsTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+

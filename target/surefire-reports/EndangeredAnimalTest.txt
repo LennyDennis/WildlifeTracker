@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: EndangeredAnimalTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.02 sec <<< FAILURE! - in EndangeredAnimalTest
+EndangeredAnimal_instanceOfEndangeredAnimal_true(EndangeredAnimalTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+getAge_returnAgeLevelOfTheAnimal_okay(EndangeredAnimalTest)  Time elapsed: 0.002 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+getName_returnNameOfEndangeredAnimal_cat(EndangeredAnimalTest)  Time elapsed: 0.002 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+all_returnsAllInstancesOfEndangeredAnimal_true(EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+EndangeredAnimal_instantiatesWithOkayHealthLevel(EndangeredAnimalTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+save_savesEndangeredAnimalInstanceToDB_EndangeredAnimal(EndangeredAnimalTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+EndangeredAnimal_instantiatesWithYoungAgeLevel(EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+equals_returnsTrueIfNamesAreTheSame_true(EndangeredAnimalTest)  Time elapsed: 0.007 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+id_assignIdToSpecificInstance(EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+getSightings_retrievesAllSightingsFromDB_sightingList(EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
+getHealth_returnHealthLevelOfTheAnimal_okay(EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://ukywkmtapdfthq:d46cce2f76206e06180033f9168fa2c62a82969473488869b1b860f9902d3638@ec2-184-72-235-159.compute-1.amazonaws.com:5432/dfqcaadhibtj93
+
