@@ -1,35 +1,53 @@
 import org.sql2o.Connection;
 
 import java.util.List;
+import java.util.Objects;
 
 public class EndangeredAnimal  extends Animal{
-    public String healthLevel;
-    public String ageLevel;
+    public String health;
+    public String age;
     public static final String DATABASE_TYPE = "Endangered";
 
-    public  EndangeredAnimal(String name,String healthLevel,String ageLevel){
+    public  EndangeredAnimal(String name, String health, String age){
         this.name = name;
-        this.healthLevel = healthLevel;
-        this.ageLevel = ageLevel;
+        this.health = health;
+        this.age = age;
         type = DATABASE_TYPE;
     }
 
-    public String getHealthLevel(){
-        return healthLevel;
+    public String getHealth(){
+
+        return health;
     }
-    public String getAgeLevel(){
-        return ageLevel;
+    public String getAge(){
+        return age;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        EndangeredAnimal animal = (EndangeredAnimal ) o;
+        return id == animal.id &&
+                health.equals(animal.health) &&
+                age.equals(animal.age) &&
+                name.equals(animal.name) &&
+                type.equals(animal.type);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(health, age, name, id, type);
     }
 
     public static List<EndangeredAnimal> all(){
         String sql = "SELECT * FROM animals WHERE type='Endangered'";
         try(Connection con = DB.sql2o.open()){
             return con.createQuery(sql)
-                    .throwOnMappingFailure(false)
                     .executeAndFetch(EndangeredAnimal.class);
         }
     }
-    @Override
+
     public void save(){        EndangeredAnimal testEndangeredAnimal1 = new EndangeredAnimal("cat","okay","young");
 
         try(Connection con = DB.sql2o.open()){
@@ -37,8 +55,8 @@ public class EndangeredAnimal  extends Animal{
             this.id = (int) con.createQuery(sql,true)
                     .addParameter("name",this.name)
                     .addParameter("type",this.type)
-                    .addParameter("health",this.healthLevel)
-                    .addParameter("age",this.ageLevel)
+                    .addParameter("health",this.health)
+                    .addParameter("age",this.age)
                     .executeUpdate()
                     .getKey();
         }

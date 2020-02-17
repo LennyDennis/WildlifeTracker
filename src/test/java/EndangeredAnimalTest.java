@@ -22,11 +22,11 @@ public class EndangeredAnimalTest {
     }
     @Test
     public void getHealth_returnHealthLevelOfTheAnimal_okay(){
-        assertEquals("okay", testEndangeredAnimal.getHealthLevel());
+        assertEquals("okay", testEndangeredAnimal.getHealth());
     }
     @Test
     public void getAge_returnAgeLevelOfTheAnimal_okay(){
-        assertEquals("young", testEndangeredAnimal.getAgeLevel());
+        assertEquals("young", testEndangeredAnimal.getAge());
     }
     @Test
     public void equals_returnsTrueIfNamesAreTheSame_true(){
@@ -53,7 +53,7 @@ public class EndangeredAnimalTest {
         assertEquals(testEndangeredAnimal.getId(), savedEndangeredAnimal.getId());
     }
     @Test
-    public void getMonsters_retrievesAllMonstersFromDB_monsterList(){
+    public void getSightings_retrievesAllSightingsFromDB_sightingList(){
         EndangeredAnimal testEndangeredAnimal1 = new EndangeredAnimal("cat","okay","young");
         testEndangeredAnimal1.save();
         Sightings firstSightings = new Sightings(testEndangeredAnimal1.getId(),"Zone A","Lenny");
@@ -66,10 +66,10 @@ public class EndangeredAnimalTest {
     }
     @Test
     public void EndangeredAnimal_instantiatesWithOkayHealthLevel(){
-        assertEquals(testEndangeredAnimal.getHealthLevel(),"okay");
+        assertEquals(testEndangeredAnimal.getHealth(),"okay");
     }
     @Test
     public void EndangeredAnimal_instantiatesWithYoungAgeLevel(){
-        assertEquals(testEndangeredAnimal.getAgeLevel(),"young");
+        assertEquals(testEndangeredAnimal.getAge(),"young");
     }
 }

@@ -43,7 +43,7 @@ public class NormalAnimalTest {
         assertEquals(testNormalAnimal.getId(), savedNormalAnimal.getId());
     }
     @Test
-    public void getMonsters_retrievesAllMonstersFromDB_monsterList(){
+    public void getSighting_retrievesAllSightingFromDB_monsterList(){
         NormalAnimal testNormalAnimal1 = new NormalAnimal("cat");
         testNormalAnimal1.save();
         Sightings firstSightings = new Sightings(testNormalAnimal1.getId(),"Zone A","Lenny");

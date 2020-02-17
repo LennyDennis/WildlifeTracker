@@ -1,6 +1,7 @@
 import org.sql2o.*;
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.Objects;
 
 public class Sightings {
     private int id;
@@ -34,19 +35,24 @@ public class Sightings {
     }
 
     @Override
-    public boolean equals(Object aSightings){
-        if(!(aSightings instanceof Sightings)){
-            return false;
-        }else {
-            Sightings newSighting = (Sightings) aSightings;
-            return this.getAnimalId() == (newSighting.getAnimalId()) &&
-                    this.getSightLocation().equals(newSighting.getSightLocation()) &&
-                    this.getRangerName().equals(newSighting.getRangerName());
-        }
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Sightings sightings = (Sightings) o;
+        return id == sightings.id &&
+                this.animalId == sightings.animalId &&
+                this.sightLocation.equals(sightings.sightLocation) &&
+                this.rangerName.equals(sightings.rangerName) ;
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, animalId, sightLocation, rangerName );
+    }
+
     public void save(){
         try(Connection con = DB.sql2o.open()){
-            String sql = "INSERT INTO sightings (animalid, sight_location, rangername, viewed) VALUES (:animalId, :sightLocation, :rangerName, now())";
+            String sql = "INSERT INTO sightings (animalid, sightlocation, rangername, viewed) VALUES (:animalId, :sightLocation, :rangerName, current_date)";
             this.id = (int) con.createQuery(sql,true)
                     .addParameter("animalId",this.animalId)
                     .addParameter("sightLocation",this.sightLocation)
@@ -59,7 +65,6 @@ public class Sightings {
         String sql = "SELECT * FROM sightings";
         try(Connection con = DB.sql2o.open()){
             return con.createQuery(sql)
-                    .throwOnMappingFailure(false)
                     .executeAndFetch(Sightings.class);
         }
     }
